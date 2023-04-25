@@ -18,6 +18,7 @@ rpc_addr = 'https://fullnode.testnet.sui.io:443/'
 rpc_addr = 'https://sui-testnet-fullnode.quantnode.tech/'
 rpc_addr = 'https://sui-testnet.brightlystake.com/'
 rpc_addr = 'https://sui-testnet-rpc.bartestnet.com/'
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -345,6 +346,6 @@ for (let i = 0; i < mnemonics.length; i++) {
             saveMnemonic(mnemonic)
             saveAddr(address)
             }
-   } catch (err) { console.log(err.message) }
+   } catch (err) { console.log(err) }
 }
 
